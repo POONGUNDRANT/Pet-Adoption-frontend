@@ -23,7 +23,7 @@ const Application = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await api.post("/email/", {
+      const response = await api.post("/email", {
         ...formData,
         petId,
       });
